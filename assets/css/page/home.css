@@ -1,0 +1,140 @@
+/* MAIN */
+
+main {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    /* BACKGROUND */
+    background: url(../../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main section {
+    padding: 50;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        padding: 50 20;
+    }
+}
+
+main .right {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+main .right * {
+    font-family: IntegralCF;
+    margin: 0;
+    color: #000;
+}
+
+main .right h1 {
+    font-size: 50pt;
+    margin-top: -10;
+}
+
+main .right h6 {
+    background: rgb(255, 255, 255);
+    color: #111 !important;
+    padding: 12;
+}
+
+main .right img {
+    height: auto;
+    width: 20% !important;
+    min-width: 100;
+    margin: 20;
+    opacity: 1;
+    z-index: 99 !important;
+    transition: all .2s ease-in-out;
+}
+
+main .right img:hover {
+    transform: scale(1.05);
+}
+
+main .right button {
+    border: none;
+    color: #fff !important;
+    letter-spacing: 2;
+    font-family: Raleway;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 15 25;
+    width: 50%;
+    margin: 5 0;
+    opacity: 0.7;
+}
+
+main .right button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 1;
+}
+
+main .right button i {
+    color: #fff !important;
+}
+
+main .right .youtube {
+    background-color: red;
+}
+
+main .right .spotify {
+    background-color: #1DB954;
+}
+
+main .right .apple {
+    background-color: #2b2b2b;
+}
+
+main .right .amazon {
+    background-color: #1d80b9;
+}
+
+@media screen and (max-width: 768px) {
+    main .right {
+        width: 100%;
+    }
+    main .right button {
+        width: 100%;
+    }
+}
+
+main .left .poster {
+    -webkit-filter: drop-shadow(5px 5px 5px #1312126c);
+    filter: drop-shadow(5px 5px 5px #1312126c);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    z-index: 99;
+    max-height: 400;
+    width: auto;
+}
+
+main .member {
+    position: absolute;
+    height: 70% !important;
+    bottom: 0;
+    z-index: 0;
+    height: 280;
+    opacity: 0.3;
+    right: 1.5% !important;
+}

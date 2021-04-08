@@ -1,0 +1,134 @@
+/* CONFIG */
+
+:root {
+    --none: none;
+}
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: IntegralCF;
+    src: url(../fonts/IntegralCF/IntegralCF-Bold.otf);
+}
+
+
+/* ROOT */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fa,
+.fas {
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 900;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+
+body {
+    display: flex;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+}
+
+
+/* TOOLTIP */
+
+[data-title] {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+[data-title]:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 9999999999999999999 !important;
+    bottom: -26px;
+    left: -.5px;
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 2px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-family: Raleway !important;
+    font-weight: 700 !important;
+    white-space: nowrap;
+}
+
+
+/* ANIMATION */
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@-webkit-keyframes bgmain {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-moz-keyframes bgmain {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes bgmain {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}

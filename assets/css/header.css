@@ -1,0 +1,48 @@
+/* HEADER */
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section {
+    padding: 0 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+
+header .logo img {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
+}
+
+header .nav span {
+    cursor: pointer;
+    font-weight: 900 !important;
+    color: rgb(27, 24, 24);
+    transition: .8s;
+    font-size: 20px;
+    padding: 5 10;
+}
+
+header .nav span:hover {
+    opacity: 0.5;
+}
